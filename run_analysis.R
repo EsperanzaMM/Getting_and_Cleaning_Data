@@ -39,4 +39,3 @@ tidyData <- aggregate(. ~ subject + activity, data = alldata, FUN = mean)
 write.table(tidyData, "tidyData.txt", row.names = FALSE)
 read.table("tidyData.txt", header = TRUE)
 
-
