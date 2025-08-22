@@ -1,15 +1,8 @@
----
-title: "README.md"
-author: "Esperanza"
-date: "2025-08-19"
-output: html_document
----
-
-
 # Getting and Cleaning Data Project
 
 ## Overview
-This project demonstrates the ability to collect, work with, and clean a data set. The goal is to prepare a tidy dataset that can be used for further analysis. 
+This project demonstrates the ability to collect, work with, and clean a data set.  
+The goal is to prepare a tidy dataset that can be used for further analysis. 
 
 The dataset used comes from the [UCI Human Activity Recognition Using Smartphones Dataset](https://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones).
 
@@ -20,10 +13,11 @@ The dataset used comes from the [UCI Human Activity Recognition Using Smartphone
 - `README.md`: Overview of the project (this file).
 
 ## How to Run
-1. Make sure all raw data files from the UCI HAR Dataset are in the working directory.
-2. Open `run_analysis.R` in R or RStudio.
-3. Run the script.
-4. The script will generate `tidyData.txt` in the working directory.
+1. Download and unzip the UCI HAR Dataset into your working directory (dataset is **not included** in this repo).
+2. Make sure the folder `UCI HAR Dataset` is available in your working directory.
+3. Open `run_analysis.R` in R or RStudio.
+4. Run the script.
+5. The script will generate `tidyData.txt` in the working directory.
 
 ## Notes
 - The script merges the training and test datasets.
@@ -31,3 +25,9 @@ The dataset used comes from the [UCI Human Activity Recognition Using Smartphone
 - Descriptive activity names are applied.
 - Variable names are made descriptive.
 - The tidy dataset contains the average of each variable for each activity and each subject.
+
+## Example Usage
+```r
+# Load tidy dataset
+tidy <- read.table("tidyData.txt", header = TRUE)
+head(tidy)
