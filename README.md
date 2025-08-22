@@ -27,7 +27,9 @@ The dataset used comes from the [UCI Human Activity Recognition Using Smartphone
 - The tidy dataset contains the average of each variable for each activity and each subject.
 
 ## Example Usage
-```r
 # Load tidy dataset
 tidy <- read.table("tidyData.txt", header = TRUE)
 head(tidy)
+
+# Getting_and_Cleaning_Data
+f738c0a930da05472c305492fb7dfbfbebc3f054
